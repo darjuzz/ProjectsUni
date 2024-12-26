@@ -1,0 +1,77 @@
+\documentclass{pi2}
+
+\begin{document}
+	
+	% \maketitle{Übungsnummer}{Tutor:in}{Bearbeitende}
+	\maketitle{6}{Tim Sperling}{Sofya Kosushkina,     Radedarjus Farhadi}
+	
+	\section{Spannende Vernetzung}
+	
+	Das Bild von dem minimalen aufspannenden Baum aus dem gegebenen Straßennetz befindet sich in dem 'Aufgabe 1' Ordner (da fehlt leider rechts in der Legende zwischen 'Q' und 'M' der Knoten 'B')
+	
+	Vorgehensweise:
+	
+	1. Den ersten Startknoten auswählen. Wir haben uns für den Knoten 'H' entschieden.
+	
+	2. 'H' hat 4 möglichen Kanten und zwar mit der Länge 10, 10, 14 und 28. Davon nehmen wir die Strecke, die am kürzesten ist. In dem Fall haben wir zwei Kanten, die die Länge 10 haben. Hier haben wir die Strecke zu dem Knoten 'G' ausgewählt.
+	
+	Schon vernetzt : (H,G)
+	Länge der Strecke: 10
+	
+	3. Es geht weiter und wir haben jetzt 2 Möglichkeiten mehr, also die Kanten, die von 'G' ausgehen (mit der Länge 8 und 12). Also von insgesamt 5 Möglichkeiten nehmen wir die kleinste, die zum Knoten 'E' führt.
+	
+    Schon vernetzt : (H,G,E)
+	Länge der Strecke: 18
+	
+	4. Von dem Knoten 'E' zum 'R' und vom 'R' nach 'F' kommen wir ebenso mit den Strecken, die 8 Messeinheiten lang sind, weil die Strecken aus allen Möglichkeiten die kürzesten sind. 
+	
+	Schon vernetzt : (H,G,E,R,F)
+	Länge der Strecke: 34
+	
+	5. Danach sollen wir wieder die kürzeste Strecke von allen Strecken, die aus schon bereits vernetzten Knoten ausgehen auswählen. Da die Kanten von 'F' nicht die kleinsten sind (12 und 14), suchen wir wo anders. Es gibt mehrere Kanten mit der Länge 10, die die kleinste Länge zur Zeit ist. Wir haben uns auf die Strecke vom Knoten 'R' bis 'C' entschieden. 
+	
+	Schon vernetzt : (H,G,E,R,F,C)
+	Länge der Strecke: 44
+	
+	6. Mit dem Einfügen von 'C' haben wir noch mehr Möglichkeiten bekommen. Die nächste kürzeste Strecke geht von 'C' bis 'I' und beträgt 6 Messeinheiten. 
+	
+	Schon vernetzt : (H,G,E,R,F,C,I)
+	Länge der Strecke: 50
+	
+	7. Weiter geht es mit dem selben Prinzip von 'I' nach 'K' mit der Strecke, die 4 Messeinheiten lang ist.
+	
+	Schon vernetzt : (H,G,E,R,F,C,I,K)
+	Länge der Strecke: 54
+	
+	8. Die nächste kürzeste Strecke wäre von 'C' bis 'J', also noch 8 Messeinheiten dazu. 
+	
+	Schon vernetzt : (H,G,E,R,F,C,I,K,J)
+	Länge der Strecke: 62
+	
+	9. Wir haben wieder richtig viele Strecken mit der Länge 10. Wir gehen weiter von 'K' bis 'D'.
+	
+	Schon vernetzt : (H,G,E,R,F,C,I,K,J,D)
+	Länge der Strecke: 72
+	
+	10. Dann können wir direkt bis zu dem Knoten 'B' gehen, da alle Strecken bis dahin die kürzesten sind ('D' - 'O' = 6, 'O' - 'P' = 2, 'P' - 'Q' = 2, 'Q' - 'B' = 4).
+	
+	Schon vernetzt : (H,G,E,R,F,C,I,K,J,D,O,P,Q,B)
+	Länge der Strecke: 86
+	
+	11. Allerdings, sind jetzt fast alle Strecken rechts in dem Schema ungültig (z.B 'B' - 'J', 'C' - 'B', 'B' - 'D' usw.), da wir nicht die Strecke zwischen 2 schon vernetzten Knoten auswählen dürfen. Auf dem Bild sind die alle durchgestrichen. Weiter gehen wir von 'D' nach 'M', da die Strecke mit der Länge 10 am kürzesten ist. 
+	
+	Schon vernetzt : (H,G,E,R,F,C,I,K,J,D,O,P,Q,B,M)
+	Länge der Strecke: 96
+	
+	12. Mit 10 Messeinheiten geht es weiter von 'M' bis 'L'.
+	
+	Schon vernetzt : (H,G,E,R,F,C,I,K,J,D,O,P,Q,B,M,L
+	)
+	Länge der Strecke: 106
+	
+	13. Dann sind nur 2 Knoten nicht vernetzt geblieben: 'N' und 'A'. Die geringste Länge um nach 'A' zu gehen ist 10 (entweder vom Knoten 'H' oder 'E'. Wir haben 'H' genommen). Die geringste Länge um nach 'N' zu gehen ist 14 von dem Knoten 'H'.
+	
+	Schon vernetzt : (H,G,E,R,F,C,I,K,J,D,O,P,Q,B,M,L,A,N)
+	Länge der Strecke: 130
+
+\end{document}
