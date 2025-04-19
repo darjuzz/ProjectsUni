@@ -1,0 +1,62 @@
+body {
+    padding-top: 56px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffbd07;
+  }
+  
+  header {
+    background-color: #343a40;
+  }
+  
+  header a.navbar-brand,
+  header button.navbar-toggler {
+    color: white;
+    border: none;
+  }
+  
+  header a.navbar-brand:hover,
+  header button.navbar-toggler:hover {
+    color: #ffca28;
+  }
+  
+  .container {
+    margin-top: 40px;
+  }
+  
+  h1.display-4 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  h2.h4 {
+    color: #343a40;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  a {
+    color: #007bff;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  a.mail-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a.mail-link:hover {
+    text-decoration: underline;
+  }
